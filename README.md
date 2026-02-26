@@ -1,5 +1,5 @@
 # quick-overview
-quick overviews of all the techniques
+quick overview of all the techniques
 
 [tailwind CSS 문법](https://github.com/CakeKingK/quick-overview/blob/main/tailwind-css.md)
 
