@@ -34,8 +34,6 @@
 ** 키 타입 불확실할 경우
  openssl pkey -in private.key -text -noout
 ```
-\
-
 
 ## keytool
 **1. 키스토어(.jks) 확인 **
@@ -44,7 +42,8 @@
  keytool -list -v -keystore keystore.jks
  keytool -list -v -keystore keystore.jks -storepass password
 ** provider 지정(with Bouncy Castle)
- keytool -list -v -keystore cert.bks -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath bcprov-jdk..on-1....jar
+ keytool -list -v -keystore cert.bks -storetype BKS \
+ -provider org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath bcprov-jdk..on-1....jar
 
 * alias 목록 확인
  keytool -list -keystore keystore.jks
@@ -52,4 +51,4 @@
 ** p12 대상
  keytool -list -v -keystore keystore.p12 -storetype PKCS12
 ```
-\
+
