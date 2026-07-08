@@ -35,6 +35,17 @@
  openssl pkey -in private.key -text -noout
 ```
 
+3. 인증서의 지원 도메인 확인
+```
+* SNI 확인
+ openssl s_client -connect example.com:443 -servername example.com
+
+* TLS 버전 확인
+ openssl s_client -connect example.com:443 -servername example.com -tls1
+ openssl s_client -connect example.com:443 -servername example.com -tls1_1
+ openssl s_client -connect example.com:443 -servername example.com -tls1_2
+```
+
 ## keytool
 **1. 키스토어(.jks) 확인 **
 ```
