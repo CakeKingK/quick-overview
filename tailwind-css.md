@@ -87,7 +87,7 @@ lg: (큰 화면 이상)
 xl: …
 
 ex)
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+```<div className="grid grid-cols-1 md:grid-cols-2 gap-4">```
 
 모바일 1열 → md 이상 2열
 
